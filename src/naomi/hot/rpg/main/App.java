@@ -17,7 +17,7 @@ public class App {
         String name = JOptionPane.showInputDialog(null, "Choose your name",
                 GAME_NAME, JOptionPane.QUESTION_MESSAGE);
 
-        Player player = new Player(name, 1);
+        Entity player = new Player(name, 1);
 
         JOptionPane.showMessageDialog(null, "Welcome " + player.getName() + "!",
                GAME_NAME,  JOptionPane.INFORMATION_MESSAGE);

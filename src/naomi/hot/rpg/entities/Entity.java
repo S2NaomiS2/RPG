@@ -1,6 +1,6 @@
 package naomi.hot.rpg.entities;
 
-public class Entity {
+public abstract class Entity {
 
     protected String name;
     protected int level;
@@ -13,10 +13,15 @@ public class Entity {
 
     protected int speed;
     protected int power;
+    protected int def;
 
     public Entity(String name, int level) {
         this.name = name;
         this.level = level;
+    }
+
+    public void attack(Entity enemy) {
+
     }
 
     public String getName() {
@@ -29,6 +34,10 @@ public class Entity {
 
     public int getHealth() {
         return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
     }
 
     public int getMaxHealth() {
