@@ -1,6 +1,7 @@
 package naomi.hot.rpg.main;
 
 import jdk.nashorn.internal.scripts.JO;
+import naomi.hot.rpg.entities.Entity;
 import naomi.hot.rpg.entities.Player;
 
 import javax.swing.*;
@@ -29,5 +30,6 @@ public class App {
                 "INN", JOptionPane.PLAIN_MESSAGE
                 );
     }
+
 
 }
